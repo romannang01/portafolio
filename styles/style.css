@@ -1,0 +1,161 @@
+
+:root {
+--color-primario: black;
+--color-secundario: #f6f6f6;
+--color-terciario: #22d4fd;
+
+--fuente1: "Montserrat",sans-serif;
+--fuente2: "Krona One",sans-serif;
+--hover: #272727;
+}
+
+
+* {
+padding: 0;
+margin: 0;
+}
+
+
+body {
+box-sizing: border-box;
+background-color: var(--color-primario);
+color: var(--color-secundario);
+}
+
+.presentacion {
+display: flex;
+align-items: center;
+padding: 5% 15%;
+justify-content: space-between;
+gap: 82px;
+}
+
+.presentacion__contenido {
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+
+
+.presentacion__contenido__titulo {
+
+font-family: var(--fuente2);
+font-size: 2.25rem ;
+font-weight: 400;
+}
+
+.presentacion__contenido__texto {
+   font-family: var(--fuente1);
+  font-size: 1.5rem;
+   
+}
+
+.presentacion__links {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+gap: 32px;
+align-items: center;
+}
+
+.presentacion__links__texto {
+  font-family: var(--fuente2);
+  font-size: 1.5rem;
+   font-weight: 400;
+}
+
+.presentacion__links__boton {
+
+width: 50%;
+padding: 21.5px 0;
+border-radius: 8px;
+text-align: center;
+color: #F6F6F6;
+text-decoration: none;
+border: 2px solid var(--color-terciario);
+font-family: var(--fuente1);
+font-size: 1.5rem;
+font-weight: 600;
+display: flex;
+justify-content: center;
+gap: 10px;
+transition: 0.2s ease-out;
+}
+
+.presentacion__links__boton:hover {
+cursor:pointer;
+background-color: var(--hover);
+}
+
+.presentacion__imagen {
+width: 50%;
+}
+
+
+.presentacion__footer {
+   display: flex;
+   background-color: var(--color-terciario);
+   position: absolute;
+   width: 100%;
+font-family: var(--fuente1);
+font-size: 1.5rem;
+text-align: center;
+justify-content: center;
+color: black;
+padding: 24px;
+
+}
+
+.header {
+ padding: 2% 0% 0% 15%;
+
+}
+
+.header__menu {
+   display: flex;
+gap: 80px;
+}
+
+.header__menu__link {
+   
+font-family: var(--fuente1);
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   color:var(--color-terciario);
+   margin: 0px 15px;
+    padding: 10px 15px;
+}
+
+.header__menu__link:hover {
+color: #007bff;
+}
+
+strong {
+color: var(--color-terciario);
+}
+
+@media (max-width: 1200px) {
+
+.presentacion {
+flex-direction: column-reverse;
+} 
+
+.presentacion__contenido, .presentacion__links__boton {
+width: 100%;
+}
+
+.header {
+ padding: 10%;
+}
+.header__menu {
+justify-content: center;
+}
+
+}
+
+
+
+
